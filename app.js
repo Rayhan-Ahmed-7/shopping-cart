@@ -21,7 +21,7 @@ function calculateTotal(){
     const subTotal = phoneTotal + caseTotal;
     document.getElementById('sub-total').innerText = subTotal;
     //tax
-    const tax = subTotal / 5;
+    const tax = (subTotal * 5) / 100;
     document.getElementById('tax').innerText = tax;
     //total
     document.getElementById('total').innerText = subTotal + tax;
